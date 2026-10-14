@@ -1,0 +1,52 @@
+{
+    "name":  "dsh-theme-endfield-style",
+    "version":  "0.1.0",
+    "description":  "Arknights: Endfield-style theme for DeepSeek Harness web: fluorescent-yellow sidebar, contour artwork and light/dark palettes. Unofficial fan work.",
+    "license":  "MIT",
+    "type":  "module",
+    "main":  "./lib/index.js",
+    "exports":  {
+                    ".":  "./lib/index.js",
+                    "./client":  "./lib/client.js",
+                    "./package.json":  "./package.json"
+                },
+    "files":  [
+                  "lib",
+                  "README.md",
+                  "README.zh.md",
+                  "LICENSE",
+                  "screenshots.json",
+                  "assets"
+              ],
+    "keywords":  [
+                     "dsh-plugin",
+                     "deepseek-harness",
+                     "theme"
+                 ],
+    "author":  "Xiaoli-Asuna",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/Xiaoli-Asuna/dsh-theme-endfield-style.git"
+                   },
+    "homepage":  "https://github.com/Xiaoli-Asuna/dsh-theme-endfield-style#readme",
+    "bugs":  {
+                 "url":  "https://github.com/Xiaoli-Asuna/dsh-theme-endfield-style/issues"
+             },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "platform":  "web",
+                               "inject":  [
+
+                                          ]
+                           }
+            },
+    "scripts":  {
+                    "build":  "node build.mjs"
+                },
+    "devDependencies":  {
+                            "esbuild":  "^0.25.0"
+                        }
+}
